@@ -1,0 +1,80 @@
+.menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: white;
+  color: #2e2e2e;
+  box-shadow: 0 0 200px 0 rgba(214, 214, 214, 0.2), 0 0 200px 0 rgba(214, 214, 214, 0.3);
+}
+
+.body {
+  height: 100vh;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-container {
+  position: absolute;
+  z-index: 11;
+  bottom: 120px;
+}
+
+.content-logo {
+  opacity: 0.1;
+  width: 130%;
+  height: 130%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  font-size: 56px;
+  gap: 12px;
+  margin-top: 50px;
+  z-index: 12;
+}
+
+.header {
+  color: #6d6d6d;
+  border-bottom: 1px solid #6d6d6d;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.Link {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.Link.active {
+  border-bottom: 2px solid #000000;
+  color: #000000;
+}
+
+.footer {
+  color: #6d6d6d;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  font-size: 12px;
+}
+.footer a {
+  cursor: pointer;
+}
+
+/* =================================== MEDIA QUARIES =================================== */
+
+@media only screen and (max-width: 768px) {
+  .Link {
+    font-size: 40px;
+  }
+
+  .body {
+    width: 100vw;
+  }
+}

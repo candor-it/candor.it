@@ -1,0 +1,165 @@
+#PROJECT {
+  background-color: #e6e6e6;
+}
+
+.navbar {
+  background-color: #e6e6e6;
+}
+
+/* =================================== HERO =================================== */
+
+#project__hero {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding: 2rem 8% 0 8%;
+  width: 100vw;
+  height: fit-content;
+}
+
+.project__hero_text-container {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.project__hero_text-title {
+  width: 100%;
+  color: #2a2a2a;
+  font-size: 3.8em;
+  line-height: 1.2;
+  font-weight: 900;
+  color: #2a2a2a;
+}
+
+.project__hero_text-content-container {
+  display: flex;
+  width: 50%;
+}
+
+.project__hero_text-content {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #2a2a2a;
+  line-height: 1.5;
+}
+
+/* =================================== PROJECT =================================== */
+
+#project__project {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding: 0 8% 100px 8%;
+  width: 100vw;
+  height: fit-content;
+  min-height: 50vh;
+}
+
+.project__project_filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project__project_filter-list {
+  display: flex;
+  gap: 0 1rem;
+  margin-bottom: 55px;
+}
+
+.project__project_filter-list ul {
+  font-family: "Italiana", sans-serif;
+  font-weight: 900;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  text-decoration: none;
+  padding-left: 0;
+  z-index: 1000;
+}
+
+.project__project_button {
+  bottom: 0;
+  display: flex;
+  color: #2a2a2a;
+  background-color: #e6e6e6;
+  font-size: 1.5em !important;
+  font-weight: 500;
+  border: 1px solid #2a2a2a;
+  border-radius: 50px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.project__project_button.active {
+  color: #e6e6e6;
+  background: #2a2a2a;
+}
+
+.product__project_item-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 3rem;
+}
+
+/* =================================== MEDIA QUARIES =================================== */
+
+@media only screen and (max-width: 768px) {
+  #project__hero {
+    padding: 2rem 5% 2rem 5%;
+  }
+
+  .project__hero_text-container {
+    height: 40vh;
+  }
+
+  .project__hero_text-title {
+    font-size: 10vw;
+  }
+
+  .project__hero_text-content-container {
+    width: 100%;
+  }
+
+  #project__project {
+    padding: 0 5% 100px 5%;
+  }
+
+  .project__project_filter-list ul {
+    font-size: 2vw;
+    gap: 0.5rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .product__project_item-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vh 1vw;
+  }
+
+  .product__project_item-card {
+    width: 40vw !important;
+    height: 30vh !important;
+  }
+
+  .article-text {
+    height: fit-content !important;
+    top: 65% !important;
+  }
+
+  .article-text h2 {
+    font-size: 3vw !important;
+  }
+
+  .article-text p {
+    font-size: 3vw !important;
+  }
+}
