@@ -1,6 +1,6 @@
 <script type="text/javascript">
-    var pathname = window.location.pathname;
-    if (pathname !== '/') {
-        window.location.replace("/" + "index.html");
+    var redirectTo = window.location.pathname;
+    if (redirectTo !== "/") {
+        window.location.replace("/index.html?redirect=" + redirectTo);
     }
 </script>
